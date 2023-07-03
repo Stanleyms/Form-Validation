@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="form.js"></script>
+  </head>
+  <body>
+    <div class="section1">
+      <div class="form">
+        <p class="title">REGISTRATION FORM</p>
+        <table class="details">
+          <tr>
+            <td>
+              <label for="name">NAME:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="ns"
+                name="name"
+                value=""
+                placeholder="Enter your name"
+              />
+              <p id="er" style="color: red; line-height: 0px"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">EMAIL:</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="em"
+                name="email"
+                value=""
+                placeholder="Enter your email"
+              />
+              <p id="ee" style="color: red; line-height: 0px"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">PASSWORD:</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                id="pw"
+                placeholder="Enter your password"
+              />
+              <p id="pe" style="color: red; line-height: 0px"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="number">MOBILE NUMBER:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="pn"
+                name="number"
+                value=""
+                placeholder="Enter your mobile number"
+              />
+              <p id="ne" style="color:red; line-height: 0px"></p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">GENDER:</label></td>
+            <td>
+              MALE: <input type="radio" name="gender" value="male" id="gender" /> FEMALE:
+              <input type="radio" name="gender" value="female" id="gender" /> OTHER:
+              <input type="radio" name="gender" value="other" id="gender" />
+              <p id="ge" style="color:red; line-height: 0px"></p> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="country">COUNTRY:</label>
+            </td>
+            <td>
+              <select name="country" id="cntry">
+                <option value="">Select your country</option>
+                <option value="india">INDIA</option>
+                <option value="united states">USA</option>
+                <option value="china">CHINA</option>
+                <option value="russia">RUSSIA</option>
+                </select>
+                <p id="cn" style="color:red ;line-height: 0px "></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="language">LANGUAGE:</label>
+            </td>
+            <td>
+              <select name="language" id="language">
+                <option value="">Select your language</option>
+                <option value="tamil">TAMIL</option>
+                <option value="english">ENGLISH</option>
+                <option value="hindi">HINDI</option>
+              </select>
+              <p id="ln" style="color:red ;line-height: 0px "></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="today">DATE:</label>
+              
+            </td>
+            <td>
+              <input type="date" id="date" name="today">
+              
+            </td>
+          </tr>
+        </table>
+        <div class="box">
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox">
+            I agree to these <a href="#">Terms and Conditions</a>.</label
+          >
+          <p id="te" style="color:red ;margin-top: 15px; line-height:0px ; "></p>
+          <button class="button">
+            <input
+              class="submit"
+              type="submit"
+              id="submit"
+              value="Login"
+              onclick="valids();"
+              
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
